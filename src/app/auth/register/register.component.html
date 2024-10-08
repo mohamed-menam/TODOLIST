@@ -1,0 +1,22 @@
+<div routerLink="/register">
+    <form class="register" *ngIf="!successMessage">
+        <h2>NEW ACCOUNT</h2>
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" [(ngModel)]="registrationData.username">
+        <label for="fristname">First name:</label>
+        <input type="text" id="fristname" name="fristname" [(ngModel)]="registrationData.first_name">
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" [(ngModel)]="registrationData.last_name">
+        <label for="lastname">Phone:</label>
+        <input type="text" id="phone" name="phone" [(ngModel)]="registrationData.phone_number">
+        <label for="email">Email address:</label>
+        <input type="text" id="email" name="email" [(ngModel)]="registrationData.email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="registrationData.password" required>
+        <button (click)="register()">Register</button>
+        <a href="http://localhost:4200/login">Sign in</a>
+    </form>
+    <div *ngIf="successMessage" class="success-message">
+        {{ successMessage }}
+    </div>
+</div>

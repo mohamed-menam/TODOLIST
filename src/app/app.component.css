@@ -1,0 +1,46 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Main container styling */
+  .container {
+    width: 100%;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header component styling */
+  app-header {
+    margin-bottom: 1rem;
+  }
+  
+  /* Search component styling */
+  app-search {
+    margin-bottom: 1rem;
+  }
+  
+  /* Add Todo component styling */
+  app-add-todo {
+    margin-bottom: 1rem;
+  }
+  
+  /* Todo List component styling */
+  app-todo-list {
+    margin-bottom: 1rem;
+  }
+  
+  /* Additional utility classes */
+  .text-center {
+    text-align: center;
+  }
+  

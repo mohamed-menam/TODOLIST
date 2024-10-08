@@ -1,0 +1,57 @@
+/* Container for each todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  transition: background-color 0.3s;
+}
+
+/* Style for completed todos */
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+  background-color: #e0e0e0;
+}
+
+/* Checkbox styling */
+.todo-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Span containing the todo title */
+.todo-item span {
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+/* Delete button styling */
+.todo-item button {
+  margin-left: auto;
+  gap: 1000px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border: none;
+  background-color: limegreen;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the delete button */
+.todo-item button:hover {
+  background-color: #c82333;
+}
