@@ -1,27 +1,56 @@
+#Todo List Application
+
+A simple, user-friendly Todo List application where users can register, log in, and manage their personal tasks. Each user sees only their own tasks.
+
+Features
+User Authentication: Register and log in with secure credentials.
+Personalized Task Management: View, add, edit, and delete tasks that are specific to your account.
+JWT Authentication: Ensures that each user can only manage their own tasks.
+Responsive Design: Accessible on both mobile and desktop devices.
+
+Technologies Used
+
+> > Backend: Django (Python)
+> > Frontend: Angular
+> > Database: MySQL
+> > Authentication: JWT-based authentication
+> > Getting Started
+
+Prerequisites
+
+> Python 3.x
+> Node.js and npm
+> MySQL
+
+Backend Setup (Django)
+1-Clone the repository:
+git clone https://github.com/yourusername/todo-list.git
+cd todo-list/backend
+
+2-Install Python dependencies:
+pip install -r requirements.txt
+
+3-Set up the MySQL database and configure the database settings in the settings.py file.
+
+4-Run database migrations:
+
+5-python manage.py migrate
+
+6-Start the Django development server:
+python manage.py runserver
+
+Frontend Setup (Angular)
+1-Navigate to the frontend folder:
+cd todolist
+
+2-Install Angular dependencies:
+npm install
+3-Start the Angular development server:
+ng serve
+
+Running the Application
+
+1-Visit http://localhost:4200 for the frontend interface.
+
+2- Use the application to register, log in, and manage your tasks.
 # TodoList
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
