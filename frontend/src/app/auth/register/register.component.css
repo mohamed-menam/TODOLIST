@@ -1,0 +1,77 @@
+body {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.register {
+  display: grid;
+  width: 600px;
+  height: 550px;
+  /* background-color: #78c1f3; */
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.register h2 {
+  color: black; /* Green color */
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+.register a {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #78c1f3;
+  text-decoration: none;
+  width: 530px;
+  border-radius: 5px;
+}
+
+.register a:hover {
+  background-color: #9ccbeb;
+  color: black;
+}
+
+.register input {
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 500px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.register label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.register button {
+  width: 100px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-left: 70%;
+
+  background-color: #78c1f3;
+  border: none;
+  border-radius: 5px;
+}
+
+.register button:hover {
+  background-color: #9ccbeb;
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: green; /* Change the text color */
+  font-weight: bold;
+  text-align: center; /* Center the message */
+}

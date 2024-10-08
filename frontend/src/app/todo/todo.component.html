@@ -1,0 +1,18 @@
+<div class="todo-item" [ngClass]="{ 'completed': todo!.completed }">
+    <div *ngIf="!isEditing; else editeMode">
+        <!-- <input type="checkbox" [checked]="todo.completed" (change)="onToggle()"> -->
+        <span>{{todo.title}}</span>
+        <div class="todo-buttons">
+
+            <button (click)="startEditing()">✏️</button>
+            <button (click)="onDelete()">❌</button>
+        </div>
+    </div>
+
+    <ng-template #editeMode>
+        <input [(ngModel)]="editTitle">
+        <button (click)="saveEditing()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+    </ng-template>
+
+</div>

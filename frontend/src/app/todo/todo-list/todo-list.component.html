@@ -1,0 +1,13 @@
+<div class="todo-list-container">
+    <div class="todo-adds-container">
+        <app-search (search)="searchTodo($event)" />
+        <app-add-todo (addTodo)="createNewTodo($event)"></app-add-todo>
+    </div>
+
+    <div *ngIf="todos.length === 0" class="empty-message">
+        No todos to display.
+    </div>
+    <app-todo *ngFor="let todo of todos" [todo]="todo" (toggle)="toggleTodoCompletion(todo)"
+        (delete)="deleteTodos(todo.id)" (edit)="editTodoTitle(todo,$event)">
+    </app-todo>
+</div>

@@ -1,0 +1,9 @@
+<form class="containerlogin" routerLink="/login" (ngSubmit)="onSumbit()">
+    <label>USER NAME</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username" required placeholder="Username">
+    <label>PASSWORD</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Password">
+    <button type="submit">Login</button>
+    <a href="http://localhost:4200/register"> Create your TODO account</a>
+
+</form>
